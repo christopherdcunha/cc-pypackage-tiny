@@ -1,0 +1,4 @@
+include *.md
+include *.py
+include Makefile
+include tox.ini

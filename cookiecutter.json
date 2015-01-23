@@ -1,0 +1,12 @@
+{
+  "project_name": "Tiny Python Package",
+  "package_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "module_name": "{{ cookiecutter.package_name|replace('-', '_') }}",
+  "package_description": "My tiny python package does something useful",
+  "package_version": "0.1.0",
+  "full_name": "Christopher D'Cunha",
+  "email": "me@christopherdcunha.com",
+  "git_server_url": "https://github.com",
+  "git_username": "christopherdcunha",
+  "package_url": "{{ cookiecutter.git_server_url }}/{{ cookiecutter.git_username }}/{{ cookiecutter.package_name }}"
+}
