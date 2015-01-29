@@ -6,28 +6,23 @@ This is a cookiecutter for a tiny python package.
 Installation and Usage
 ----------------------
 
-Installation is simple:
+Install cookiecutter:
 
 ```bash
 $ pip install cookiecutter
 ```
 
-Usage is simple too:
+Scaffold your package:
 
 ```bash
-$ cookiecutter christopherdcunha/cc-pypackage-tiny
+$ cookiecutter gh:christopherdcunha/cc-pypackage-tiny
 ```
-
-Features
---------
-
-This cookiecutter uses:
-- tox
-- pytest
-- make
 
 History
 -------
 
+### 1.0.0 (2015-01-29)
+- Added sphinx config + alabaster theme
+
 ### 1.0.0 (2015-01-22)
-- Initial cookiecutter
+- Initial cookiecutter with tox, pytest, flake8, make

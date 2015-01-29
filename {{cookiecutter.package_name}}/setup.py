@@ -11,8 +11,8 @@ setuptools.setup(
     author={{ cookiecutter.module_name }}.__author__,
     author_email={{ cookiecutter.module_name }}.__email__,
 
-    description={{ cookiecutter.module_name }}.__doc__,
-    long_description=open('README.md').read(),
+    description=next(s for s in {{ cookiecutter.module_name }}.__doc__.split('\n') if s),
+    long_description=open('README.rst').read(),
 
     py_modules=[
         "{{ cookiecutter.module_name }}",

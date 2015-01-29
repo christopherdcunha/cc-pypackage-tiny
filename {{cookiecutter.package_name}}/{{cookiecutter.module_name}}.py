@@ -3,6 +3,7 @@
 {{ cookiecutter.package_description }}
 """
 
+__project_name__ = "{{ cookiecutter.project_name }}"
 __author__ = "{{ cookiecutter.full_name }}"
 __version__ = "{{ cookiecutter.package_version }}.dev0"
 __email__ = "{{ cookiecutter.email }}"

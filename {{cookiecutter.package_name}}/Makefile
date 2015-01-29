@@ -2,6 +2,7 @@
 
 help:
 	@echo "clean - remove build artifacts and python artifacts"
+	@echo "docs - generate sphinx html documentation"
 	@echo "env - make a virtualenv and activate it"
 	@echo "lint - check style with flake8"
 	@echo "test - run tox"
@@ -26,4 +27,10 @@ env:
 	./.env/bin/pip install --upgrade pip
 	./.env/bin/pip install --upgrade setuptools wheel
 	./.env/bin/pip install flake8 pytest tox
+	./.env/bin/pip install sphinx alabaster
 	. ./.env/bin/activate
+
+docs:
+	$(MAKE) -C docs clean
+	$(MAKE) -C docs html
+	open docs/build/html/index.html
