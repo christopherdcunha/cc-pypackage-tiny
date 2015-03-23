@@ -1,17 +1,15 @@
 import setuptools
 
-import {{ cookiecutter.module_name }}
-
 
 setuptools.setup(
     name="{{ cookiecutter.package_name }}",
-    version={{ cookiecutter.module_name }}.__version__,
+    version="{{ cookiecutter.package_version }}.dev0",
     url="{{ cookiecutter.package_url }}",
 
-    author={{ cookiecutter.module_name }}.__author__,
-    author_email={{ cookiecutter.module_name }}.__email__,
+    author="{{ cookiecutter.full_name }}",
+    author_email="{{ cookiecutter.email }}",
 
-    description=next(s for s in {{ cookiecutter.module_name }}.__doc__.split('\n') if s),
+    description="{{ cookiecutter.package_description }}",
     long_description=open('README.rst').read(),
 
     py_modules=[
